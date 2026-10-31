@@ -14,7 +14,9 @@ def main():
     print(f"Mean of dice rolls: {average}")
 
     plt.figure(figsize=(8, 5))
-    plt.hist(rolls, bins=6)
+    plt.hist(rolls, bins=range(1,8))
+    plt.xlabel("Dice roll")
+    plt.ylabel("Count")
     plt.show()
 
 
