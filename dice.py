@@ -15,6 +15,7 @@ def main():
 
     plt.figure(figsize=(8, 5))
     plt.hist(rolls, bins=range(1,8))
+    plt.axvline(average, color="r")
     plt.xlabel("Dice roll")
     plt.ylabel("Count")
     plt.show()
